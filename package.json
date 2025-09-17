@@ -1,0 +1,47 @@
+{
+  "name": "ecoalert",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "convex": "npx convex dev",
+    "convex:init": "node scripts/deploy-convex.js",
+    "convex:deploy": "node scripts/deploy-convex.js",
+    "convex:prod": "CONVEX_ENVIRONMENT=production node scripts/deploy-convex.js",
+    "convex:test": "CONVEX_ENVIRONMENT=test node scripts/deploy-convex.js"
+  },
+  "dependencies": {
+    "@auth/core": "^0.40.0",
+    "@clerk/nextjs": "^6.32.0",
+    "@convex-dev/auth": "^0.0.89",
+    "@radix-ui/react-alert-dialog": "^1.1.15",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tabs": "^1.1.13",
+    "@radix-ui/react-toast": "^1.2.15",
+    "autoprefixer": "^10.4.21",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "convex": "^1.27.0",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.461.0",
+    "next": "^15.1.8",
+    "postcss": "^8.5.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^5.0.0",
+    "recharts": "^2.13.3",
+    "sonner": "^1.5.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^3.4.17",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "typescript": "^5.7.3"
+  }
+}

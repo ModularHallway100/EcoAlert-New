@@ -1,0 +1,16 @@
+# Convex Environment Setup
+# This file is used to set up the Convex development environment
+
+# Initialize Convex
+npx convex init
+
+# Set up Convex configuration
+echo "CONVEX_URL=http://localhost:3000" > .env.local
+echo "CONVEX_SECRET=your-secret-key-here" >> .env.local
+
+# Create convex directory structure
+mkdir -p convex
+mkdir -p convex/_generated
+
+# Run the development server
+npm run convex dev
